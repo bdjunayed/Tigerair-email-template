@@ -1,0 +1,759 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Type E: 06. The Web Font Issue.</title>
+    <style type="text/css">
+      .ExternalClass * {line-height:100%;}
+      	span.preHeader {display:none !important;}
+      	.mainContent {width:100%; max-width:600px;}
+      	.blueLink a {color:#282828 !important; text-decoration:none; pointer-events:none !important;}
+      	.codeLink a {color:#ee0000 !important; text-decoration:none; pointer-events:none !important;}
+      	a:hover.textLink {-webkit-transition:all 0.5s ease; -moz-transition:all 2s ease; transition:all 2s ease; color:#ee0000 !important;}
+      @media only screen and (min-device-width:600px), screen and (min-width:600px) {
+      	table.mainContent {width:600px !important; height:auto !important;}
+      }
+      @media only screen and (max-device-width:500px), screen and (max-width:500px) {
+      	table.mainContent {width:99% !important;}
+      	table.emailWidth {display:block !important; width:100% !important;}
+      	td.emailWidth {padding:0 10px 10px 10px !important;}
+      	td.preHeader {display:none !important;}
+      	span.hide {display:none !important;}
+      	td.columnWrap {display:block !important; width:100% !important;}
+      	table.tableImageResize {display:block !important; width:100% !important;}
+      	td.sectionHead {width:50px !important;}
+      	td.sectionBody {width:50px !important;}
+      	td.tdImageResize {display:block !important; width:100% !important;}
+      	img.imgImageResize {display:block !important; width:100% !important; height:auto !important;}
+      	td.emailClientPercentage {padding:5px 0 5px 5px !important;}
+      	.masthead {line-height:110% !important;}
+      	span.emoticon:before {content:'\1F44B';}
+      	td.aBC {font-size:65px !important; line-height:80px !important;}
+      	td.book {padding:0 !important;}
+      	td.bookDetails {padding:20px 20px 40px 40px !important;}
+      	p.graph {font-size:15px !important; line-height:15px !important;}
+      	.codeText a {color:#ee0000 !important; text-decoration:none !important;}
+      	.codeTextHighlight a {color:#ee0000 !important; text-decoration:none !important;}
+      	.url a {color:#ee0000 !important; text-decoration:none !important;}
+      }
+      @media screen {
+      @font-face {
+      	font-family:'Montserrat';
+      	font-style:normal;
+      	font-weight:400;
+      	src:local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+      }
+      @font-face {
+      	font-family:'Poppins';
+      	font-style:normal;
+      	font-weight:400;
+      	src: local('Poppins'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v1/ePBp1XdWMQqYWkm0HYfk2gLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+      }
+      @font-face {
+      	font-family:'Libre Baskerville';
+      	font-style:normal;
+      	font-weight:400;
+      	src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(https://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsK5gtRqbDAavNCEBluaoIIJc.woff) format('woff');
+      }
+      @font-face {
+      	font-family:'Pinyon Script';
+      	font-style:normal;
+      	font-weight:400;
+      	src: local('Pinyon Script'), local('PinyonScript'), url(https://fonts.gstatic.com/s/pinyonscript/v6/TzghnhfCn7TuE73f-CBQ0OhDEaHDfMuQhVXT6B-Qt40.woff) format('woff');
+      }
+      }
+    </style>
+    <!--[if mso]>
+      <style type="text/css">
+        .book {padding:60px 0 60px !important !important;}
+      </style>
+    <![endif]-->
+  </head>
+  
+  <body topmargin="0" leftmargin="0" bgcolor="#e1e1e1" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;background-color:#e1e1e1;">
+    <div class="main-wrapper">
+      <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td>
+            <!--[if mso]>
+              <table width="600px" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                  <![endif]-->
+                  <table class="mainContent" width="100%" align="center" cellpadding="0" cellspacing="0"
+                  border="0" style="width:100%;max-width:600px;">
+                    <tr>
+                      <td>
+                        <table class="emailWidth" width="600" align="center" cellpadding="0" cellspacing="0"
+                        border="0" bgcolor="#ffffff">
+                          <tr>
+                            <td class="emailWidth" style="padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;">
+                              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td class="preHeader" width="100%" height="30" style="font-family:'Courier New', Courier, monospace;font-size:10px;line-height:15px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">
+                                    <a href="/t/ViewEmail/d/B3C811F5B7CC2022/F73E7F548FE3919C6A4D01E12DB8921D" style="color:#ee0000;">
+                                      <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Current email client support for web fonts, and a simple method of implementing
+                                        them successfully.</div>View the web fonts &ndash; on the web!</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td width="100%">
+                                    	<h1 style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:110px;line-height:130px;mso-line-height-rule:exactly;text-align:left;color:#ee0000;padding-top:10px;padding-bottom:20px;padding-right:0;padding-left:0;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Type E:</h1>
+                                    <hr class="horizontalRule" size="1">
+                                    <br>
+                                    	<h2 class="issue" style="font-family:'Courier New', Courier, monospace;font-size:14px;line-height:25px;mso-line-height-rule:exactly;font-weight:lighter;color:#282828;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">06. The Web Font Issue</h2>
+
+                                  </td>
+                                </tr>
+                              </table>
+                              <div style="display:block;height:30px;font-size:30px;line-height:30px;">&nbsp;</div>
+                              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td width="100%" valign="top">
+                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                      <tr>
+                                        <td class="aBC" width="560" height="200" valign="middle" style="font-size:100px;line-height:150px;text-align:center;border-width:1px;border-style:solid;border-color:#e1e1e1;border-bottom-style:none;"><span style="font-family:'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;color:#4285f4;">Aa</span>
+                                          <span
+                                          style="font-family:'Libre Baskerville', 'Helvetica Neue', Helvetica, Arial, sans-serif;color:#ea4335;">Bb</span><span style="font-family:'Pinyon Script', 'Helvetica Neue', Helvetica, Arial, sans-serif;color:#34a853;">Cc</span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <table width="100%" align="left" cellpadding="0" cellspacing="0" border="0" bgcolor="#666666">
+                                            <tr>
+                                              <td class="legend" style="font-family:Courier, monospace;font-size:14px;line-height:21px;color:#ffffff;padding-top:15px;padding-bottom:15px;padding-right:20px;padding-left:20px;"><span>Web fonts &lsquo;Poppins&rsquo;, &lsquo;Libre Baskerville&rsquo; and &lsquo;Pinyon&nbsp;Script&rsquo;.</span>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td width="100%" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:13px;line-height:21px;color:#666666;padding-top:30px;padding-bottom:40px;padding-right:0;padding-left:0;">
+                                    <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">There was a time when email designers and developers had good reason to avoid
+                                      web fonts, not in the least part due to the limited number of email clients capable
+                                      of displaying them. Today, there are still only a handful of email clients with
+                                      that capability. What&rsquo;s changed, however, and what makes web fonts worth
+                                      reconsidering, is that the
+                                      <a class="textLink" href="https://emailclientmarketshare.com"
+                                      target="_blank" style="color:#000000;">market share</a>of those email clients has&nbsp;increased.</p>
+                                    <div style="display:block;height:10px;font-size:10px;line-height:10px;">&nbsp;</div>
+                                    <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">In this issue, I&rsquo;ll look at current email client support for web fonts,
+                                      and a simple method of implementing them successfully.</p>
+                                  </td>
+                                </tr>
+                              </table>
+                              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td class="sectionHead" width="100%" style="padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;border-width:1px;border-style:solid;border-color:#999999;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#999999;">
+                                    	<h3 style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;line-height:25px;mso-line-height-rule:exactly;font-weight:normal;color:#666666;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Web font support.</h3>
+
+                                  </td>
+                                </tr>
+                              </table>
+                              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td class="sectionBody" width="100%" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:13px;line-height:21px;color:#666666;padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;border-width:1px;border-style:solid;border-color:#999999;border-top-width:0;">
+                                    <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Each month,
+                                      <a class="textLink" href="https://emailclientmarketshare.com" target="_blank"
+                                      style="color:#000000;">Litmus</a>publishes a list of the top ten email and webmail clients their customers&rsquo;
+                                      subscribers have used to open their emails. With over one billion emails being
+                                      tracked worldwide, it provides a very good indication of current trends. In April
+                                      2016, four of the top five email clients on the list were capable of displaying
+                                      web fonts &ndash; 63% of those tracked! This was up from three of the top five
+                                      &ndash; 46% of those tracked in the same month, two years&nbsp;ago!</p>
+                                    <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+                                    <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f7faff">
+                                      <tr>
+                                        <td class="boxOut" width="100%" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:13px;line-height:21px;color:#1389ff;padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;border-width:1px;border-style:solid;border-color:#6699ff;background-image:url(http://i1.cmail20.com/ei/d/C7/DE5/8C8/165343/csimport/grid_0.png);">
+                                          	<h4 class="codeText" style="font-family:Courier, monospace;mso-line-height-rule:exactly;font-weight:normal;color:#ee0000;padding-top:0;padding-bottom:1px;padding-right:0;padding-left:0;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ee0000;">The case for reconsidering web&nbsp;fonts</h4>
+
+                                          <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">1. 63% of emails opened in April 2016 by Litmus customers&rsquo; subscribers,
+                                            were done so in email clients that support web fonts. That&rsquo;s a 137% increase
+                                            on the same month, two years&nbsp;ago.</p>
+                                          <table width="100%" cellpadding="0" cellspacing="0"
+                                          border="0">
+                                            <tr>
+                                              <td>
+                                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                  <tr>
+                                                    <td width="49%" height="54px">
+                                                      <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">&nbsp;</p>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td width="49%" height="46px" valign="bottom" bgcolor="#3399ff" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:25px;line-height:35px;padding-top:10px;padding-bottom:10px;padding-right:0;padding-left:10px;">
+                                                      <p class="graph" style="font-size:15px;line-height:15px;color:#ffffff;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">2014: 46%</p>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                              <td width="2%">
+                                                <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">&nbsp;</p>
+                                              </td>
+                                              <td>
+                                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                  <tr>
+                                                    <td width="49%" height="37px">
+                                                      <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">&nbsp;</p>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td width="49%" height="63px" valign="bottom" bgcolor="#ee0000" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:25px;line-height:35px;padding-top:10px;padding-bottom:10px;padding-right:0;padding-left:10px;">
+                                                      <p class="graph" style="font-size:15px;line-height:15px;color:#ffffff;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">2016: 63%</p>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <div style="display:block;height:30px;font-size:30px;line-height:30px;">&nbsp;</div>
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">2. A significant proportion of emails opened in April 2016 by Litmus customers&rsquo;
+                                            subscribers, were done so in email clients on iOS or OSX operating systems &ndash;
+                                            iOS Mail on iPhone (34%), iOS Mail on iPad (11%) and OSX Mail on Mac (8%), all
+                                            of which support web fonts.</p>
+                                          <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+                                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                              <td class="emailClientPercentage" width="34%" bgcolor="#3399ff" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;padding-top:5px;padding-bottom:5px;padding-right:0;padding-left:10px;">
+                                                <p style="color:#ffffff;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;"><span class="hide">34%</span>
+                                                </p>
+                                              </td>
+                                              <td class="emailClientPercentage" width="11%" bgcolor="#0066cc" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;padding-top:5px;padding-bottom:5px;padding-right:0;padding-left:10px;">
+                                                <p style="color:#ffffff;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;"><span class="hide">11%</span>
+                                                </p>
+                                              </td>
+                                              <td class="emailClientPercentage" width="10%" bgcolor="#003399" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;padding-top:5px;padding-bottom:5px;padding-right:0;padding-left:10px;">
+                                                <p style="color:#ffffff;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;"><span class="hide">10%</span>
+                                                </p>
+                                              </td>
+                                              <td class="emailClientPercentage" width="8%" bgcolor="#000033" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;padding-top:5px;padding-bottom:5px;padding-right:0;padding-left:10px;">
+                                                <p style="color:#ffffff;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;"><span class="hide">8%</span>
+                                                </p>
+                                              </td>
+                                              <td class="emailClientPercentage" width="37%" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;padding-top:5px;padding-bottom:5px;padding-right:0;padding-left:10px;">
+                                                <p style="color:#666666;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;"><span class="hide">37%</span>&nbsp;</p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+                                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                              <td width="3%">
+                                                <table width="20" height="20" cellpadding="0" cellspacing="0" border="0">
+                                                  <tr>
+                                                    <td width="20" bgcolor="#3399ff" style="line-height:14px !important;">	<span>&nbsp;</span>
+
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                              <td width="97%" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;padding-top:5px;padding-bottom:5px;padding-right:15px;padding-left:15px;">
+                                                <p style="color:#666666;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">iPhone: 34%</p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                              <td width="3%">
+                                                <table width="20" height="20" cellpadding="0" cellspacing="0" border="0">
+                                                  <tr>
+                                                    <td width="20" bgcolor="#0066cc" style="line-height:14px !important;">	<span>&nbsp;</span>
+
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                              <td width="97%" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;padding-top:5px;padding-bottom:5px;padding-right:15px;padding-left:15px;">
+                                                <p style="color:#666666;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">iPad: 11%</p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                              <td width="3%">
+                                                <table width="20" height="20" cellpadding="0" cellspacing="0" border="0">
+                                                  <tr>
+                                                    <td width="20" bgcolor="#003399" style="line-height:14px !important;">	<span>&nbsp;</span>
+
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                              <td width="97%" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;padding-top:5px;padding-bottom:5px;padding-right:15px;padding-left:15px;">
+                                                <p style="color:#666666;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Google Android: 10%</p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                              <td width="3%">
+                                                <table width="20" height="20" cellpadding="0" cellspacing="0" border="0">
+                                                  <tr>
+                                                    <td width="20" bgcolor="#000033" style="line-height:14px !important;">	<span>&nbsp;</span>
+
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                              <td width="97%" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;padding-top:5px;padding-bottom:5px;padding-right:15px;padding-left:15px;">
+                                                <p style="color:#666666;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Mac: 8%</p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                              <td width="3%">
+                                                <table width="20" height="20" cellpadding="0" cellspacing="0" border="0">
+                                                  <tr>
+                                                    <td width="20" bgcolor="#ffe5e5" style="line-height:14px !important;">	<span>&nbsp;</span>
+
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                              <td width="97%" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;padding-top:5px;padding-bottom:5px;padding-right:15px;padding-left:15px;">
+                                                <p style="color:#666666;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">No Support: 37%</p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+                                    <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Though it&rsquo;s vitally important to review the email clients used by your own
+                                      subscribers, and make a decision for or against using web fonts based on the proportion
+                                      of them that use &lsquo;web font friendly&rsquo; email clients, this trend does
+                                      present a strong case for at least reconsidering web fonts. To help you make that
+                                      decision, here&rsquo;s a summary of the mobile, tablet and desktop email clients
+                                      that currently support them:</p>
+                                    <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                      <tr>
+                                        <td width="50%" valign="top" bgcolor="#ee0000" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-right-width:1px;border-right-style:dotted;border-right-color:#ffffff;">
+                                          <p style="color:#ffffff;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Operating System</p>
+                                        </td>
+                                        <td width="50%" valign="top" bgcolor="#ee0000" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;">
+                                          <p style="color:#ffffff;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Email Client</p>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;border-right-width:1px;border-right-style:dotted;border-right-color:#ffffff;">
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">iOS</p>
+                                        </td>
+                                        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;">
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Mail (iPhone)</p>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;border-right-width:1px;border-right-style:dotted;border-right-color:#ffffff;">
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">iOS</p>
+                                        </td>
+                                        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;">
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Mail (iPad)</p>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;border-right-width:1px;border-right-style:dotted;border-right-color:#ffffff;">
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">OSX</p>
+                                        </td>
+                                        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;">
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Mail (Mac)</p>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;border-right-width:1px;border-right-style:dotted;border-right-color:#ffffff;">
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">OSX</p>
+                                        </td>
+                                        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;">
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Microsoft Outlook 2011</p>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;border-right-width:1px;border-right-style:dotted;border-right-color:#ffffff;">
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">OSX</p>
+                                        </td>
+                                        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;">
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Microsoft Outlook 2016</p>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-right-width:1px;border-right-style:dotted;border-right-color:#ffffff;">
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Google Android 4.4</p>
+                                        </td>
+                                        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;">
+                                          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Native</p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <div style="display:block;height:40px;font-size:40px;line-height:40px;">&nbsp;</div>
+                              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td class="sectionHead" width="100%" style="padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;border-width:1px;border-style:solid;border-color:#999999;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#999999;">
+                                    	<h3 style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;line-height:25px;mso-line-height-rule:exactly;font-weight:normal;color:#666666;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Finding web fonts.</h3>
+
+                                  </td>
+                                </tr>
+                              </table>
+                              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td class="sectionBody" width="100%" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:13px;line-height:21px;color:#666666;padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;border-width:1px;border-style:solid;border-color:#999999;border-top-width:0;">
+                                    <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Once you&rsquo;ve decided to use web fonts in your emails, you&rsquo;ll need to
+                                      find some, and for that, you&rsquo;ll need to go to a web font&nbsp;supplier.</p>
+                                    <div
+                                    style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+    <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">For web fonts in email, you can&rsquo;t go far wrong with
+      <a class="textLink" href="https://fonts.google.com"
+      target="_blank" style="color:#000000;">Google Fonts</a>, especially since its recent update, which has made it even easier
+      to use. You won&rsquo;t find any immediately recognisable font names, unless you&rsquo;re
+      familiar with Google Fonts already. There are, however, fonts that have similar
+      characteristics to well-known fonts, such as Avant Garde, Baskerville and Copperplate
+      Script. Here&rsquo;re a few examples:</p>
+    <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td width="50%" valign="top" bgcolor="#ee0000" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-right-width:1px;border-right-style:dotted;border-right-color:#ffffff;">
+          <p style="color:#ffffff;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">&lsquo;Well-Known&rsquo; Font</p>
+        </td>
+        <td width="50%" valign="top" bgcolor="#ee0000" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;">
+          <p style="color:#ffffff;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Google Font</p>
+        </td>
+      </tr>
+      <tr>
+        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;border-right-width:1px;border-right-style:dotted;border-right-color:#ffffff;">
+          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Avant Garde</p>
+        </td>
+        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;">
+          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">
+            <a class="textLink" href="https://fonts.google.com/specimen/Poppins" target="_blank"
+            style="color:#000000;">Poppins</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;border-right-width:1px;border-right-style:dotted;border-right-color:#ffffff;">
+          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Baskerville</p>
+        </td>
+        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;">
+          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">
+            <a class="textLink" href="https://fonts.google.com/specimen/Libre+Baskerville"
+            target="_blank" style="color:#000000;">Libre Baskerville</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;border-right-width:1px;border-right-style:dotted;border-right-color:#ffffff;">
+          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Copperplate Script</p>
+        </td>
+        <td width="50%" valign="top" bgcolor="#ffe5e5" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;padding-top:10px;padding-bottom:10px;padding-right:15px;padding-left:15px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#ffffff;">
+          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">
+            <a class="textLink" href="https://fonts.google.com/specimen/Pinyon+Script" target="_blank"
+            style="color:#000000;">Pinyon Script</a>
+          </p>
+        </td>
+      </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+    <div style="display:block;height:40px;font-size:40px;line-height:40px;">&nbsp;</div>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td class="sectionHead" width="100%" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+          	<h5 style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;line-height:25px;mso-line-height-rule:exactly;font-weight:normal;color:#ee0000;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;"><strong>A Type of email: a handbook for working with typography in email</strong></h5>
+
+        </td>
+      </tr>
+    </table>
+    <div style="display:block;height:10px;font-size:10px;line-height:10px;">&nbsp;</div>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-width:1px;border-style:solid;border-color:#999999;border-collapse:collapse;">
+      <tr>
+        <td class="columnWrap" width="100%" valign="top">
+          <table class="tableImageResize" width="220" align="left" cellpadding="0" cellspacing="0"
+          border="0" bgcolor="#ee0000">
+            <tr>
+              <td class="book" width="220" bgcolor="#ee0000" style="padding-top:40px;padding-bottom:40px;padding-right:0;padding-left:0;">
+                <a href="http://www.beyondtheenvelope.co.uk/a-type-of-email.php" target="_blank">
+                  <img class="imgImageResize" src="http://i2.cmail20.com/ei/d/C7/DE5/8C8/165343/csimport/a_type_of_email_cover_1.png"
+                  width="220" height="258" alt="A Type of email." title="Find out more about 'A Type of email'."
+                  style="font-family:Courier, monospace;color:#ffffff;font-size:16px;line-height:24px;text-decoration:none;display:block;border-width:0;outline-style:none;">
+                </a>
+              </td>
+            </tr>
+          </table>
+          <!--[if mso]>
+            <table width="238" align="left" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                <![endif]-->
+                <table align="left" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td width="100%">
+                      <table width="238" align="left" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td class="bookDetails" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;padding-top:30px;padding-bottom:20px;padding-right:20px;padding-left:40px;">
+                            	<h3 style="font-size:25px;line-height:25px;font-weight:bold;color:#666666;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;"><span style="font-size:35px;" >&ldquo;</span><br>
+Anyone that has a hand in creating emails should read this&nbsp;book.</h3>
+
+                            <div style="display:block;height:15px;font-size:15px;line-height:15px;">&nbsp;</div>	<span class="bookCredits" style="font-family:Georgia, Times, 'Times New Roman', serif;font-size:16px;color:#666666;"><em>Justine Jordan</em><br>
+</span>
+	<span class="bookCredits" style="font-family:Georgia, Times, 'Times New Roman', serif;font-size:12px;color:#666666;">VP of Marketing, Litmus</span>
+
+                            <div
+                            style="display:block;height:15px;font-size:15px;line-height:15px;">&nbsp;</div>
+                              <table class="button" cellpadding="0" cellspacing="0" border="0" bgcolor="#ee0000">
+                                <tr>
+                                  <td align="center" bgcolor="#ee0000">
+                                    <a class="findOutMore" href="https://gumroad.com/l/yxFxD" target="_blank" style="font-family:Arial, sans-serif;font-size:13px;font-weight:bold;color:#ffffff;text-decoration:none;text-align:center;padding-top:10px;padding-bottom:10px;padding-right:16px;padding-left:16px;display:block;border-width:1px;border-style:solid;border-color:#ee0000;">Find out more &rarr;</a>
+                                  </td>
+                                </tr>
+                              </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!--[if mso]>
+                </td>
+              </tr>
+            </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+    <div style="display:block;height:40px;font-size:40px;line-height:40px;">&nbsp;</div>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td class="sectionHead" width="100%" style="padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;border-width:1px;border-style:solid;border-color:#999999;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#999999;">
+          	<h3 style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;line-height:25px;mso-line-height-rule:exactly;font-weight:normal;color:#666666;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Importing a web font.</h3>
+
+        </td>
+      </tr>
+    </table>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td class="sectionBody" width="100%" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:13px;line-height:21px;color:#666666;padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;border-width:1px;border-style:solid;border-color:#999999;border-top-width:0;">
+          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Having found a web font, you&rsquo;ll need to import it into your email. Here&rsquo;s
+            a simple, six-step method of importing a
+            <a class="textLink" href="https://fonts.google.com"
+            target="_blank" style="color:#000000;">Google web font</a>, using
+            <a class="textLink" href="https://fonts.google.com/?query=Montserrat"
+            target="_blank" style="color:#000000;">Montserrat</a>, the font used in this email, as an&nbsp;example.</p>
+          <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">The first step is to visit
+            <a class="textLink" href="https://fonts.google.com"
+            target="_blank" style="color:#000000;">Google Fonts</a>, and search for a font by name, or by using the filters on the
+            right-hand side.</p>
+          <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td class="tdImageResize">
+                <a href="https://fonts.google.com" target="_blank">
+                  <img class="imgImageResize" src="http://i3.cmail20.com/ei/d/C7/DE5/8C8/165343/csimport/web_font_search_2.png"
+                  width="520" height="350" alt="Search Google Fonts." title="Search Google Fonts."
+                  style="font-family:Courier, monospace;font-size:16px;line-height:24px;text-decoration:none;color:#ee0000;display:block;border-width:0;outline-style:none;">
+                </a>
+              </td>
+            </tr>
+          </table>
+          <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">The second step is to select the &lsquo;Select this font&rsquo;&nbsp;button.</p>
+          <div
+          style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td class="tdImageResize">
+                  <a href="https://fonts.google.com" target="_blank">
+                    <img src="http://i4.cmail20.com/ei/d/C7/DE5/8C8/165343/csimport/select_this_font_button_3.png"
+                    width="35px" height="35px" alt="'Select this font' Button." title="'Select this font' Button."
+                    style="font-family:Courier, monospace;font-size:16px;line-height:24px;text-decoration:none;color:#ee0000;display:block;border-width:0;outline-style:none;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+            <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">The third step is to select the &lsquo;Family Selected&rsquo; bar.</p>
+            <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td class="tdImageResize">
+                  <a href="https://fonts.google.com" target="_blank">
+                    <img class="imgImageResize" src="http://i5.cmail20.com/ei/d/C7/DE5/8C8/165343/csimport/selected_family_4.png"
+                    width="520" height="350" alt="Select the 'Family Selected' bar." title="Select the 'Family Selected' bar."
+                    style="font-family:Courier, monospace;font-size:16px;line-height:24px;text-decoration:none;color:#ee0000;display:block;border-width:0;outline-style:none;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+            <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">The fourth step is to copy the web font url, in this instance, <span class="codeText"
+              style="font-family:Courier, monospace;color:#ee0000;word-break:break-all;"><a class="url"  href="https://fonts.googleapis.com/css?family=Montserrat" style="color:#ee0000 !important;text-decoration:none;" >https://fonts.googleapis.com/css?family=Montserrat</a></span>.</p>
+            <div
+            style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="tdImageResize">
+                    <a href="https://fonts.google.com" target="_blank">
+                      <img class="imgImageResize" src="http://i6.cmail20.com/ei/d/C7/DE5/8C8/165343/csimport/copy_url_5.png"
+                      width="520" height="350" alt="Copy the web font url." title="Copy the web font url."
+                      style="font-family:Courier, monospace;font-size:16px;line-height:24px;text-decoration:none;color:#ee0000;display:block;border-width:0;outline-style:none;">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+              <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">The fifth step is to paste the web font url into the address field of your
+                <a class="textLink"
+                href="http://www.apple.com/safari/" target="_blank" style="color:#000000;">Safari</a>or
+                <a class="textLink" href="https://support.microsoft.com/help/17621"
+                target="_blank" style="color:#000000;">Internet Explorer</a>browser, which will create a piece of CSS for you, linking
+                to a WOFF format web&nbsp;font.</p>
+              <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="tdImageResize">
+                    <a href="https://fonts.googleapis.com/css?family=Montserrat" target="_blank">
+                      <img class="imgImageResize" src="http://i7.cmail20.com/ei/d/C7/DE5/8C8/165343/csimport/web_font_css_6.png"
+                      width="520" height="240" alt="Web font CSS." title="Web font CSS." style="font-family:Courier, monospace;font-size:16px;line-height:24px;text-decoration:none;color:#ee0000;display:block;border-width:0;outline-style:none;">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+              <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">The sixth step is to copy the CSS from the browser, and paste it inside a
+                <span
+                class="codeText" style="font-family:Courier, monospace;color:#ee0000;">@media screen</span>media query, within an internal style sheet, within the
+                  <span
+                  class="codeText" style="font-family:Courier, monospace;color:#ee0000;">&lt;head&gt;</span>of your&nbsp;email.</p>
+              <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="codeText" width="100%" bgcolor="#ffe5e5" style="font-family:Courier, monospace;font-size:17px;color:#666666;padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">&lt;style type="text/css"&gt;
+                    <br>
+                    <br>	<span class="codeTextHighlight" style="color:#ee0000;word-break:break-all;">
+												@media screen {<br>
+<br>
+												@font-face {<br>
+												font-family:'Montserrat';<br>
+												font-style:normal;<br>
+font-weight:400;<br>
+src:local('Montserrat-Regular'),<br>
+ url(<a class="url"  href="" style="color:#ee0000 !important;text-decoration:none;pointer-events:none !important;" >https://fonts.gstatic.com/s/montserrat/<br>
+v7/zhcz-_WihjSQC0oHJ9TCYL3hpw3pgy2gAi-<br>
+Ip7WPMi0.woff</a>)format('woff');<br>
+												}<br>
+<br>
+												}<br>
+<br>
+</span>
+&lt;/style&gt;</td>
+                </tr>
+              </table>
+        </td>
+      </tr>
+    </table>
+    <div style="display:block;height:40px;font-size:40px;line-height:40px;">&nbsp;</div>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td class="sectionHead" width="100%" style="padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;border-width:1px;border-style:solid;border-color:#999999;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#999999;">
+          <h3 style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;line-height:25px;mso-line-height-rule:exactly;font-weight:normal;color:#666666;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Styling text with the web&nbsp;font.</h3>
+        </td>
+      </tr>
+    </table>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td class="sectionBody" width="100%" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:13px;line-height:21px;color:#666666;padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;border-width:1px;border-style:solid;border-color:#999999;border-top-width:0;">
+          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">Having imported the web font, you&rsquo;ll now be able to style your text with
+            it. Styling your text with the web font is as easy as adding its name to the font
+            stack, immediately after <span class="codeText" style="font-family:Courier, monospace;color:#ee0000;">font-family:</span>.
+            Ensure that the fallback fonts are proportionately similar to the web&nbsp;font.</p>
+          <div
+          style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td class="codeText" width="100%" bgcolor="#ffe5e5" style="font-family:Courier, monospace;font-size:17px;color:#666666;padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">	<span style="word-break:keep-all;">font-family:<span class="codeTextHighlight" style="color:#ee0000;" >'Montserrat',</span> 'Helvetica
+                  Neue', Helvetica, Arial, sans-serif;</span>
+                </td>
+              </tr>
+            </table>
+        </td>
+      </tr>
+    </table>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td width="100%" style="font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:13px;line-height:21px;color:#666666;padding-top:40px;padding-bottom:30px;padding-right:0;padding-left:0;">
+          <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">So, there you have it! Sound reasons for reconsidering web fonts, and a simple
+            method of implementing them.<span class="fullPoint" style="color:#ee0000;"> &#9632;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <table class="emailWidth" width="100%" bgcolor="#666666" cellpadding="0" cellspacing="0"
+    border="0">
+      <tr>
+        <td>
+          <table class="colophon" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td class="colophon" style="font-family:'Courier New', Courier, monospace;font-size:12px;line-height:18px;color:#ffffff;padding-top:20px;padding-bottom:20px;padding-right:15px;padding-left:15px;-webkit-text-size-adjust:none;">	<strong>Type E:</strong> is an email newsletter devoted to typography on email,
+                created by Email Designer and Developer, Paul Airy. Please email your thoughts,
+                suggestions and questions to
+                <a href="mailto:type-e@beyondtheenvelope.co.uk?subject=Type E:"
+                style="color:#ffffff;">type-e@beyondtheenvelope.co.uk</a>. Thank you for&nbsp;subscribing!</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <div style="display:block;height:20px;font-size:20px;line-height:20px;">&nbsp;</div>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td width="560" style="padding-bottom:20px;">
+          <hr class="horizontalRule" size="1"><span class="beyondTheEnvelope" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:20px;text-align:left;color:#ee0000;"><strong>Beyond the Envelope&trade;</strong></span>
+          <br>
+<span class="footer" style="font-family:'Courier New', Courier, monospace;font-size:10px;line-height:15px;color:#282828;">&copy; Paul Airy, 2016<br>
+<span class="blueLink">+44 (0) 7962 177 477</span> (International)
+          <br>
+<span class="blueLink">07962 177 477</span> (UK)
+          <br>@Paul_Airy</span>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%" style="padding-bottom:20px;"><span class="unsubscribe" style="font-family:'Courier New', Courier, monospace;font-size:10px;line-height:15px;"><a href="http://beyondtheenvelope.cmail20.com/t/d-u-tudkkul-dkjhjhdyh-v/" style="color:#ee0000;" >Unsubscribe</a>:<br>
+<span class="emoticon" style="font-size:20px;line-height:25px;color:#282828;" ></span> Bye
+          for now!</span>
+        </td>
+      </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+    <!--[if mso]>
+      </td>
+      </tr>
+      </table>
+    <![endif]-->
+    </td>
+    </tr>
+    </table>
+    </div>
+    <img src="https://beyondtheenvelope.cmail20.com/t/d-o-tudkkul-dkjhjhdyh/o.gif"
+    width="1" height="1" border="0" alt="" style="visibility:hidden !important;display:block !important;height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"
+    />
+  </body>
+
+</html>
